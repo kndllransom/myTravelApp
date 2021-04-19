@@ -9,11 +9,11 @@ import { KeyboardDatePicker } from '@material-ui/pickers';
 import 'date-fns';
 import DateFnsUtils from '@date-io/date-fns';
 import { MuiPickersUtilsProvider } from '@material-ui/pickers';
-// import { CountryDropdown, RegionDropdown } from 'react-country-region-selector';
 import Location from '../components/Locations'
 import Activities from '../components/Activities'
 import { useDispatch } from 'react-redux';
 import { createAddTrip } from '../redux/actions';
+
 
 
 

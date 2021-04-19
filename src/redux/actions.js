@@ -16,3 +16,4 @@ export const createAddTrip = (date, country, region, activity) => async(dispatch
 }
 
 
+

@@ -10,6 +10,7 @@ const columns = [
   { field: 'activity', headerName: 'Activity', width: 130 },
 
   
+  
   {
     valueGetter: (params) =>
       `${params.getValue('date') || ''} ${params.getValue('country') || ''} ${params.getValue('region') || ''}${params.getValue('activity') || ''}`,

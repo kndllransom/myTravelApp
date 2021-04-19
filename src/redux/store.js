@@ -14,6 +14,7 @@ const middleware = composeEnhancers(applyMiddleware(
   thunk
 ))
 
+
 const store = createStore(
   rootReducer, middleware
   );

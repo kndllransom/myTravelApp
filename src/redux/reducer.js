@@ -6,6 +6,7 @@ const defaultState = {
 }
 
 
+
 function addTrip(state = defaultState, action) {
   switch (action.type) {
     case ACTION_ADDTRIP:
