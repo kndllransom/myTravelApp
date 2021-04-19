@@ -4,17 +4,14 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button'
 import { Container } from "@material-ui/core";
-import List from './pages/tripList'
-import Add from './pages/addTrip'
-import Home from './pages/Home'
-import './App.css'
 
 
-function App() {
+function Header() {
 
   return (
     <div className="App">
 
+      {/* Fix links */}
       <Router>
         <AppBar position="static">
           <Toolbar variant="dense">          
@@ -22,9 +19,6 @@ function App() {
               Travel
             </Typography>
               <>
-              <Button color="inherit" component={NavLink} to="/">
-                  Home
-                </Button> 
                 <Button color="inherit" component={NavLink} to="/List">
                   List
                 </Button>
@@ -37,14 +31,14 @@ function App() {
         <Container style={{ margin: '2em auto' }}>
             <Switch>
               <Route path="/" exact>
-                <Home />
+                {/* <Home /> */}
               </Route>
-              <Route path="/List">
+              {/* <Route path="/List">
                 <List />
               </Route>
               <Route path="/Add">
                 <Add />
-              </Route>            
+              </Route>             */}
             </Switch>
           </Container>
       </Router>
@@ -53,4 +47,4 @@ function App() {
   );
 }
 
-export default App;
+export default Header;
