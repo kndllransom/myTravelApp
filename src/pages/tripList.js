@@ -9,7 +9,7 @@ const columns = [
   { field: 'region', headerName: 'Region', width: 130 },
   { field: 'activity', headerName: 'Activity', width: 130 },
 
-  
+
   
   {
     valueGetter: (params) =>
@@ -17,11 +17,7 @@ const columns = [
   },
 ];
 // instead of current grid, replace with user trip data
-const rows = [
-  // { id: 1, lastName: 'Snow', firstName: 'Jon', age: 35 },
-  // { id: 2, lastName: 'Lannister', firstName: 'Cersei', age: 42 },
-  
-];
+
 
 
 export default function DataTable() {
@@ -32,25 +28,27 @@ export default function DataTable() {
   
   // console.log(tripList)
   // console.log('page is rendering')
-  const test = []
-  for (const key in tripList) {
-    test.push({
-      id:1,
-      date: tripList.date,
-      country: tripList.country,
-      region: tripList.region,
-      activity: tripList.activity,
-    })
-      
-    }
   
-  console.log(test)
+  const rows = tripList.map(item => {
+    return {
+        id:1,
+        date: item.date,
+        country: item.country,
+        region: item.region,
+        activity: item.activity,
+      }
+  })
+  // for (const key in tripList) {
+      
+  //   }
+  
+  // console.log(test)
   // const newTripList = tripList.map(trip => trip)
   // console.log(newTripList)
 
   return (
     <div style={{ height: 400, width: '100%' }}>
-      <DataGrid rows={test} columns={columns} pageSize={5} checkboxSelection />
+      <DataGrid rows={rows} columns={columns} pageSize={5} checkboxSelection />
     </div>
   );
 }

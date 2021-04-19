@@ -13,11 +13,13 @@ function addTrip(state = defaultState, action) {
       return {
         ...state,
 
-        tripList: {date: action.payload.date,
+        tripList: [
+          ...state.tripList,
+        {date: action.payload.date,
         country: action.payload.country,
         region: action.payload.region,
         activity: action.payload.activity
-        }
+        }]
         
         
       

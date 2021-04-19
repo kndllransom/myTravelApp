@@ -1,7 +1,7 @@
 
 
 
-export default  [
+const countries =  [
   {
     countryName: "Dominican Republic",
     
@@ -47,3 +47,4 @@ export default  [
     ]
   },
 ];
+export default countries

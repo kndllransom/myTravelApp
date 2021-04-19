@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import FormControl from "@material-ui/core/FormControl";
 import InputLabel from "@material-ui/core/InputLabel";
@@ -63,7 +63,7 @@ const Locations = (props) => {
             ? countries
                 .find(({ countryName }) => countryName === props.selectedCountry)
                 .regions.map((region, index) => (
-                  <MenuItem key={index} value={region.name} key={region.shortCode}>
+                  <MenuItem key={index} value={region.name} >
                     {region.name}
                   </MenuItem>
                 ))
