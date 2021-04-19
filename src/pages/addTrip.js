@@ -19,7 +19,6 @@ import { createAddTrip } from '../redux/actions';
 
 
 
-// import Locations from '../components/Locations'
 
 
 const useStyles = makeStyles((theme) => ({
@@ -63,10 +62,7 @@ export default function Add() {
     };
     
     const classes = useStyles();
-    // const [name, setName] = React.useState('');
-    // const handleChange = (event) => {
-    //   setName(event.target.label);
-    // };
+    
   return (
 
     
@@ -114,7 +110,6 @@ export default function Add() {
       <button type='submit'> Submit </button>
     </form>
 
-      {/* <Locations /> */}
     </div>
   )
 }

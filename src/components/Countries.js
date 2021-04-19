@@ -1,4 +1,3 @@
-// store country/region data
 
 
 export default  [

@@ -7,7 +7,6 @@ import MenuItem from "@material-ui/core/MenuItem";
 
 import countries from "./Countries";
 
-// import "./styles.css";
 
 const useStyles = makeStyles((theme) => ({
   formControl: {

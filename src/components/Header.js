@@ -11,7 +11,6 @@ function Header() {
   return (
     <div className="App">
 
-      {/* Fix links */}
       <Router>
         <AppBar position="static">
           <Toolbar variant="dense">          
@@ -31,14 +30,8 @@ function Header() {
         <Container style={{ margin: '2em auto' }}>
             <Switch>
               <Route path="/" exact>
-                {/* <Home /> */}
               </Route>
-              {/* <Route path="/List">
-                <List />
-              </Route>
-              <Route path="/Add">
-                <Add />
-              </Route>             */}
+              
             </Switch>
           </Container>
       </Router>
